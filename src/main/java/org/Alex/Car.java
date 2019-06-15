@@ -1,17 +1,8 @@
 package org.Alex;
 
-public class Car {
+public class Car extends AutoVehicle{
 
-    String name;
-    String model;
-    String colour;
-    int fuelLevel;
-    int doors;
-    int manufactureYear;
-    boolean engineState;
-    double mileage;
-    double traveledDistance;
-    int maxSpeed;
 
-    Engine engine;
+    int doorsCount;
+
 }

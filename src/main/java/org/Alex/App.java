@@ -1,7 +1,5 @@
 package org.Alex;
 
-import java.sql.SQLOutput;
-
 /**
  * Hello world!
  *
@@ -16,9 +14,9 @@ public class App
         car.model = "Mustang";
         car.colour = "Blue";
         car.mileage = 12.4;
-        car.doors = 2;
+        car.doorsCount = 2;
         car.engineState = true;
-        car.fuelLevel = 25;
+        car.fuelLevel = 70;
         car.manufactureYear = 2019;
         car.maxSpeed = 300;
         car.traveledDistance = 10;
@@ -29,12 +27,13 @@ public class App
         engine.horsePower = 400;
         car.engine = engine;
 
+
         System.out.println("Car details: ");
         System.out.println("Name: " + car.name);
         System.out.println("Model: " + car.model);
         System.out.println("Colour: " + car.colour);
         System.out.println("Mileage: " + car.mileage);
-        System.out.println("Doors: " + car.doors);
+        System.out.println("Doors: " + car.doorsCount);
         System.out.println("Engine state: " + car.engineState);
         System.out.println("Fuel level: " + car.fuelLevel);
         System.out.println("Manufacture year: " + car.manufactureYear);
@@ -53,9 +52,9 @@ public class App
         car2.model = "Series 1";
         car2.colour = "Red";
         car2.mileage = 7.3;
-        car2.doors = 4;
+        car2.doorsCount = 4;
         car2.engineState = false;
-        car2.fuelLevel = 20;
+        car2.fuelLevel = 60;
         car2.manufactureYear = 2015;
         car2.maxSpeed = 260;
         car2.traveledDistance = 0;
@@ -71,7 +70,7 @@ public class App
         System.out.println("Model: " + car2.model);
         System.out.println("Colour: " + car2.colour);
         System.out.println("Mileage: " + car2.mileage);
-        System.out.println("Doors: " + car2.doors);
+        System.out.println("Doors: " + car2.doorsCount);
         System.out.println("Engine state: " + car2.engineState);
         System.out.println("Fuel level: " + car2.fuelLevel);
         System.out.println("Manufacture year: " + car2.manufactureYear);
@@ -92,7 +91,7 @@ public class App
         System.out.println("Model: " + car3.model);
         System.out.println("Colour: " + car3.colour);
         System.out.println("Mileage: " + car3.mileage);
-        System.out.println("Doors: " + car3.doors);
+        System.out.println("Doors: " + car3.doorsCount);
         System.out.println("Engine state: " + car3.engineState);
         System.out.println("Fuel level: " + car3.fuelLevel);
         System.out.println("Manufacture year: " + car3.manufactureYear);
@@ -103,6 +102,15 @@ public class App
         System.out.println("Our engine: " + car3.engine.manufacturer);
         System.out.println("Capacity: " + car3.engine.capacity);
         System.out.println("Horsepower: " + car3.engine.horsePower );
+
+
+        double distance = car.accelerate();
+        car.stop();
+        car.start();
+        car.brake();
+
+
+
 
 
     }
