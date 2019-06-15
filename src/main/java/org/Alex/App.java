@@ -1,5 +1,7 @@
 package org.Alex;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -108,8 +110,6 @@ public class App
         car.stop();
         car.start();
         car.brake();
-
-
 
 
 
